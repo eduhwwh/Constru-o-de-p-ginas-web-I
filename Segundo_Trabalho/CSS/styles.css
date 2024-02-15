@@ -1,0 +1,224 @@
+/* Estilos para o modo escuro */
+
+body.light-mode {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: "Dancing+Script";
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+header {
+
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+/*Inicio menu*/
+#menu_ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#menu_btt {
+  display: none;
+}
+
+li {
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  position: relative;
+}
+
+#dropdown {
+  min-width: 130px;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: absolute;
+  top: 40px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2 ease-in-out;
+}
+
+
+li:hover #dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 60px;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+body.dark-mode li a {
+  background-color: #000000;
+  color: #fff;
+}
+
+#dropdown a {
+  font-size: 14px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+
+  #menu_ul {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #menu_btt {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .logo-container {
+    flex-direction: column-reverse;
+  }
+
+  #dropdown {
+    left: 70px;
+  }
+
+}
+
+/*Fm menu*/
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  color: #000000;
+  margin-left: 20px;
+  font-size: 40px
+}
+
+body.dark-mode .title {
+  background-color: #000000;
+  color: #fff;
+}
+
+/*Dark mode*/
+
+h1 {
+  color: #000000;
+  margin-left: 20px;
+  font-size: 40px
+}
+
+body.dark-mode h1 {
+  background-color: #000000;
+  color: #fff;
+}
+
+
+/*Inicio card*/
+.card-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+.card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 50px;
+  background-color: #ffffff;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10%;
+
+}
+
+.card p {
+  text-indent: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-left: 15px;
+  font-size: 16px
+}
+
+.card h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #686868;
+  margin-left: 0px;
+  font-size: 25px
+}
+body.light-mode {
+  color: #000000;
+}
+
+body.dark-mode .card{
+  background-color: #3f3636;
+  color: #fff;
+}
+/*Fim card*/
+
+
+/*Inicio Footer*/
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.material-symbols-outlined{
+  color:rgb(0, 0, 0);
+  margin-left: 35px;
+}
+
+body.dark-mode .material-symbols-outlined {
+ 
+  color: #fff;
+}

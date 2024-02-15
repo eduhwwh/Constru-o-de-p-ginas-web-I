@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+h2 {
+  margin-bottom: 30px;
+  bottom: 0;
+  position: relative;
+  margin-left: 100px;
+  width: 100%;
+  color: #f9f9f9;
+}
+
+
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px
+}
+ 
+
+p {
+  bottom: 20px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  margin-left: 100px;
+  font-size: 16px
+}
+
+header {
+
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+
+
+/*Inicio menu*/
+#menu_ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#menu_btt {
+  display: none;
+}
+
+li {
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  position: relative;
+}
+
+#dropdown {
+  min-width: 130px;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: absolute;
+  top: 40px;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgb(0, 0, 0) 0px 25px 50px -12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2 ease-in-out;
+}
+
+
+li:hover #dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 60px;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#dropdown a {
+  font-size: 14px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+
+  #menu_ul {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #menu_btt {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .logo-container {
+    flex-direction: column-reverse;
+  }
+
+  #dropdown {
+    left: 70px;
+  }
+
+
+
+}
+
+/*Fm menu*/
+
+
+
+/*Inicio Footer*/
+.content {
+  flex: 1; 
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+/*Fim fooot*/
+
+
+.scroll-box {
+  width: 80%;
+  max-width: 800px;
+  max-height: 60vh;
+  overflow: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+}
+
+.teste {
+  background-image: url('../IMG/bts_teste.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  padding: 20px;
+  margin: 20px;
+}

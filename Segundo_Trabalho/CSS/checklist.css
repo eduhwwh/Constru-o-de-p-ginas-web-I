@@ -1,0 +1,180 @@
+body {
+  font-family: "Dancing+Script";
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+  text-align: center;
+  color: #000000;
+}
+
+/*Inicio menu*/
+#menu_ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: #000000;
+}
+
+#menu_btt {
+  display: none;
+}
+
+li {
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  position: relative;
+}
+
+#dropdown {
+  min-width: 130px;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: absolute;
+  top: 40px;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2 ease-in-out;
+}
+
+
+li:hover #dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 60px;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ li a {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#dropdown a {
+  font-size: 14px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+
+  #menu_ul {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #menu_btt {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .logo-container {
+    flex-direction: column-reverse;
+  }
+
+  #dropdown {
+    left: 70px;
+  }
+
+}
+
+/*Fm menu*/
+/*Inicio Checklist*/
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+form {
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  color: #fed400;
+  font-size: 50px;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/*Fim Checklist*/
+
+
+/*Inicio Footer*/
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/*Fim fooot*/
+
+
+.teste {
+  background-image: url('../IMG/bts_map_of_the_soul_7_concept_teaser_4_all_group.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 20px;
+}
